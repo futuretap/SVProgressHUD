@@ -39,6 +39,10 @@ typedef NSUInteger SVProgressHUDMaskType;
 + (void)setErrorImage:(UIImage*)image; // default is bundled error image from Glyphish
 + (void)setMinSize:(CGSize)minSize; // default is CGSizeZero; can be used to avoid resizing for a larger success/error message
 
+#pragma mark - Timing
+
++ (void)setMinShowTime:(NSTimeInterval)minShowTime; // default is 0; if the HUD is displayed, it's shown at least this time
+
 #pragma mark - Show Methods
 
 + (void)show;
